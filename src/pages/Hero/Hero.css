@@ -1,0 +1,55 @@
+/* Hero Section Styles */
+.hero {
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGRpbmluZ3xlbnwwfHx8fDE2MTM1MDAxNDg&ixlib=rb-1.2.1&q=80&w=1080'); /* Online image */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Adding opacity to the background */
+    filter: blur(3px); /* Blurriness */
+    z-index: 1;
+  }
+  
+  .hero-content {
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 2; /* Ensuring content is above the background */
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #ff4a3d;
+  }
+  

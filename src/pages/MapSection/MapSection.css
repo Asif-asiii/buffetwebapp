@@ -1,0 +1,19 @@
+.map-section {
+    padding: 2rem; /* Add padding */
+    background-color: #f7fafc; /* Light gray background */
+    text-align: center; /* Center align text */
+  }
+  
+  .map-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem; /* Space below title */
+  }
+  
+  .map-container {
+    margin-top: 1rem; /* Space above map */
+    border: 1px solid #ccc; /* Border for map container */
+    border-radius: 0.5rem; /* Rounded corners */
+    overflow: hidden; /* Hide overflow */
+  }
+  

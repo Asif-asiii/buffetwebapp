@@ -1,0 +1,65 @@
+.contact-us-container {
+    padding: 2rem; /* Add padding */
+    background-color: #f9f9f9; /* Light gray background */
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    max-width: 800px; /* Max width for container */
+    margin: auto; /* Center on the page */
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem; /* Space below title */
+    color: #333; /* Darker text color */
+    text-align: center; /* Center align title */
+  }
+  
+  .contact-content {
+    display: flex; /* Flex layout for form and info */
+    flex-direction: column; /* Stack elements */
+    gap: 2rem; /* Space between elements */
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column; /* Stack form inputs */
+    gap: 1rem; /* Space between inputs */
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 1rem; /* Padding for inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 0.25rem; /* Rounded corners */
+    font-size: 1rem; /* Font size for inputs */
+  }
+  
+  .contact-form textarea {
+    resize: none; /* Disable resize */
+    height: 100px; /* Set fixed height */
+  }
+  
+  .submit-button {
+    background-color: rgb(111, 82, 67); /* Green background */
+    color: white; /* White text */
+    padding: 1rem; /* Padding for button */
+    border: none; /* Remove border */
+    border-radius: 0.25rem; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 1rem; /* Font size for button */
+  }
+  
+  .submit-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  .contact-info {
+    background-color: #ffffff; /* White background for info */
+    padding: 1rem; /* Padding for info */
+    border-radius: 0.25rem; /* Rounded corners */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  }
+  

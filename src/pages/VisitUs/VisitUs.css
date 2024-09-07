@@ -1,0 +1,67 @@
+.visit-us-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem; /* Add padding */
+    background-color: #f7fafc; /* Light gray background */
+  }
+  
+  .form-container {
+    flex: 1; /* Take available space */
+    margin-bottom: 2rem; /* Space below form on small screens */
+  }
+  
+  .info-container {
+    flex: 1; /* Take available space */
+    background-color: #ffffff; /* White background for info */
+    padding: 1.5rem; /* Padding for the info section */
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  }
+  
+  .form-title, .info-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem; /* Space below titles */
+  }
+  
+  .form-group {
+    margin-bottom: 1rem; /* Space between form fields */
+  }
+  
+  .form-input, .form-textarea {
+    width: 100%;
+    padding: 0.5rem; /* Padding for inputs */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 0.25rem; /* Rounded corners */
+  }
+  
+  .form-textarea {
+    resize: vertical; /* Allow vertical resizing */
+    height: 100px; /* Set a default height */
+  }
+  
+  .send-button {
+    background-color: #4caf50; /* Green background */
+    color: white; /* White text */
+    padding: 0.5rem 1rem; /* Padding for button */
+    border: none; /* No border */
+    border-radius: 0.25rem; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+  }
+  
+  .send-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  /* Responsive Styles */
+  @media (min-width: 768px) {
+    .visit-us-container {
+      flex-direction: row; /* Side by side on larger screens */
+    }
+  
+    .form-container {
+      margin-bottom: 0; /* Remove bottom margin */
+      margin-right: 2rem; /* Space between form and info */
+    }
+  }
+  

@@ -1,0 +1,122 @@
+/* Base styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: rgb(242, 235, 235);
+  opacity: 0.9;
+  color: black;
+  position: relative;
+  z-index: 2;
+}
+
+.logo h2 {
+  margin: 0;
+  color: rgb(111, 82, 67);
+}
+
+.navbar1 {
+  margin-left: 30px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links li a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.menu {
+  display: none;
+}
+
+/* Menu open/close transitions */
+.menu.open {
+  display: flex; /* Changed from block to flex for centering */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(30, 30, 30); /* Dark background for better contrast */
+  flex-direction: column; /* Stack menu items vertically */
+  justify-content: flex-start;
+  align-items: flex-start;
+  transition: transform 0.3s ease-in-out; /* Animation for sliding */
+  transform: translateX(0); /* Start position */
+}
+
+.menu.closed {
+  transform: translateX(-100%); /* Move menu off-screen */
+}
+
+.menu ul {
+  list-style: none;
+  text-align: center;
+}
+
+.menu ul li {
+  margin: 20px 0;
+}
+
+.menu ul li a {
+  color: #f5f5f5; /* Light color for menu items */
+  text-decoration: none;
+  font-size: 24px;
+  padding: 10px 20px; /* Add padding for better touch targets */
+  transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.menu ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Hover effect */
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: #f5f5f5; /* Lighter color for close button */
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-left: 150px;
+  }
+
+  p {
+    display: none;
+  }
+}

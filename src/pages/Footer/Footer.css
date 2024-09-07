@@ -1,0 +1,21 @@
+.footer {
+    background-color: #282c34; /* Dark background color */
+    color: white; /* White text */
+    padding: 1rem; /* Padding for footer */
+    text-align: center; /* Center align text */
+  }
+  
+  .footer-content {
+    margin: 0 auto; /* Center content */
+    max-width: 800px; /* Max width for content */
+  }
+  
+  .footer-link {
+    color: #61dafb; /* Link color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
